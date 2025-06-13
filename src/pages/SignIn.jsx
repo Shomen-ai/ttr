@@ -1,31 +1,27 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import './SignIn.css';
 
 const SignIn = () => {
-    const navigate = useNavigate();
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Здесь будет логика входа
-        console.log('Вход выполнен');
-        navigate('/'); // Перенаправление на главную после входа
-    };
-
     return (
-        <div className="sign-in-page">
-            <h2>Вход</h2>
-            <form onSubmit={handleSubmit} className="sign-in-form">
-                <label>
-                    Email:
-                    <input type="email" name="email" required />
-                </label>
-                <label>
-                    Пароль:
-                    <input type="password" name="password" required />
-                </label>
-                <button type="submit">Войти</button>
-            </form>
+        <div className="center-container">
+            <div className="popup">
+                <div className="left-side">
+                    <img
+                        src='./src/assets/main3.png'
+                        alt="Traditional clothing"
+                        className="side-image"
+                    />
+                </div>
+                <div className="right-side">
+                    <h2>Аккаунт ясагыз</h2>
+                    <form>
+                        <input type="text" placeholder="Исем" />
+                        <input type="text" placeholder="Электрон почта" />
+                        <input type="password" placeholder="Пароль" />
+                        <button type="button">Аккаунт ясарга</button>
+                    </form>
+                </div>
+            </div>
         </div>
     );
 };
