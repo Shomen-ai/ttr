@@ -5,6 +5,7 @@ import Card from './components/Card';
 import WelcomeCard from './components/WelcomeCard';
 import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
+import ProfilePage from './pages/Profile.jsx';
 
 // Импортируем картинки как модули
 import headerImg from './assets/header.png';
@@ -16,12 +17,12 @@ import main4 from './assets/main4.png';
 function App() {
     return (
         <div>
-            <Header imageSrc={headerImg} />
             <Routes>
                 <Route
                     path="/"
                     element={
                         <div>
+                            <Header imageSrc={headerImg} />
                             <WelcomeCard image={main1} />
                             <Card
                                 image={main2}
@@ -45,6 +46,10 @@ function App() {
                 />
                 <Route path="/sign-in" element={<SignIn />} />
                 <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/profile" element={<ProfilePage />} />
+                {/*<Route path="/" element={<App />} />*/}
+                {/*<Route path="/rating" element={<RatingPage />} />*/}
+                {/*<Route path="/profile" element={<ProfilePage />} />*/}
             </Routes>
         </div>
     );
