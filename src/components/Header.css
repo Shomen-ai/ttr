@@ -1,0 +1,12 @@
+header {
+    background-color: #d1fae5; /* bg-green-100 в Tailwind */
+    padding: 1rem;             /* p-4 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header img {
+    display: block;
+}

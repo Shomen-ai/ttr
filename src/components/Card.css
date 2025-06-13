@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.card.reversed {
+    flex-direction: row-reverse;
+}
+
+.card-image {
+    max-width: 200px;
+    height: auto;
+}
+
+.card-content {
+    max-width: 400px;
+}
+
+.card-title {
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.5rem;
+    color: green;
+    margin-bottom: 0.5rem;
+}
+
+.card-subtitle {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.4;
+}
