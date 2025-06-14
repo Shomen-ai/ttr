@@ -99,3 +99,147 @@ h2 {
     border-color: #dc3545;
     color: #721c24;
 }
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+}
+
+.food-img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.match-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%;
+}
+
+.match-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+    transition: background 0.2s;
+}
+
+.match-btn .option-number {
+    font-style: italic;
+    font-weight: bold;
+    color: #999;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.match-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.match-btn.selected {
+    background-color: #e0e0e0;
+}
+
+.match-btn.matched {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+    cursor: default;
+}
+
+.match-btn.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.clock-icon {
+    width: 60px;
+    height: 60px;
+}
+.sentence-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+    min-height: 40px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sentence-preview.correct .sentence-word {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.sentence-preview.incorrect .sentence-word {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.sentence-word {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.sentence-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sentence-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+
+.sentence-btn:hover {
+    background: white;
+    color: black;
+}
+
+.sentence-btn:disabled {
+    background: white;
+    color: black;
+    cursor: default;
+    opacity: 1;
+    pointer-events: none;
+    border: 1px solid #ccc;
+}
