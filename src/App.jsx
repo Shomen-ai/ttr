@@ -7,6 +7,7 @@ import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
 import ProfilePage from './pages/Profile.jsx';
 import Module1 from './pages/Module1.jsx';
+import Test1 from './pages/Test1.jsx';
 
 // Импортируем картинки как модули
 import headerImg from './assets/header.png';
@@ -49,6 +50,7 @@ function App() {
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/profile" element={<ProfilePage />} />
                 <Route path="/module-1" element={<Module1 />} />
+                <Route path="/test-1" element={<Test1 />} />
                 {/*<Route path="/" element={<App />} />*/}
                 {/*<Route path="/rating" element={<RatingPage />} />*/}
                 {/*<Route path="/profile" element={<ProfilePage />} />*/}

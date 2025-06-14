@@ -1,0 +1,101 @@
+.survey-container {
+    width: 360px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    color: #999;
+}
+
+.content {
+    text-align: center;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.lion-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.lion-icon {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.thank-you-text {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: normal;
+    pointer-events: none;
+    user-select: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+}
+
+.option-number {
+    font-style: italic;
+    font-weight: bold;
+    color: #999;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.option-button:hover {
+    background-color: #f9f9f9;
+}
+
+.option-button.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.option-button.incorrect {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
