@@ -6,8 +6,10 @@ import WelcomeCard from './components/WelcomeCard';
 import SignIn from './pages/SignIn.jsx';
 import SignUp from './pages/SignUp.jsx';
 import ProfilePage from './pages/Profile.jsx';
-import Module1 from './pages/Module1.jsx';
+import Lessons from "./pages/Lessons.jsx";
+import Module1 from "./pages/Module1.jsx";
 import Test1 from './pages/Test1.jsx';
+import HelpModule1 from './pages/HelpModule1.jsx';
 
 // Импортируем картинки как модули
 import headerImg from './assets/header.png';
@@ -49,11 +51,12 @@ function App() {
                 <Route path="/sign-in" element={<SignIn />} />
                 <Route path="/sign-up" element={<SignUp />} />
                 <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/lessons" element={<Lessons />} />
                 <Route path="/module-1" element={<Module1 />} />
                 <Route path="/test-1" element={<Test1 />} />
-                {/*<Route path="/" element={<App />} />*/}
+                <Route path="/help-module-1" element={<HelpModule1 />} />
                 {/*<Route path="/rating" element={<RatingPage />} />*/}
-                {/*<Route path="/profile" element={<ProfilePage />} />*/}
+
             </Routes>
         </div>
     );
